@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>form</title>
+    <link rel="stylesheet" href="style/style.css">
+    <script src='js/jquery-3.2.1.min.js'></script>
+    <script src='js/script.js'></script>
+  </head>
+  <body>
+  <fieldset class="fieldset">
+    <legend> Форма </legend>
+    <form id="form" method="post" enctype="multipart/form-data">
+      <div class="wrapperForForm">
+
+        <div class="leftPartForm">
+          <p> <label class="textForLabel" for="text">Введите текст</label> </p>
+          <input type="text" name="text" id="text">
+          <p class="message" id="messageForText"></p>
+        </div>
+
+        <div class="rightPartForm">
+          <p> <label class="textForLabel" for="fileName">Выберите файл</label> </p>
+          <input type="file" name="fileName" id="fileName">
+          <p class="message" id="messageForFile"></p>
+        </div>
+
+      </div>
+      <button class="buttonForSubmit">Отправить</button>
+    </form>
+  </fieldset>
+  </body>
+</html>
